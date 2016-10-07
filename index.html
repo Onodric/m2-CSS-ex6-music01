@@ -19,12 +19,40 @@
     </ul>
   </header>
   <aside>
-    <input type="sl" name="">
-    ButtonsPaceholder
+    <label for="song-length">Song Length:</label>
+    <input type="range" name="song-length" id="song-length">
+    <label for="artist">Artist:</label>
+    <select id="artist" name="artist" size="1">
+      <option disabled selected value>Select Artist</option>
+      <option>ArtistPlaceholder</option>
+    </select>
+    <label for="album">Album:</label>
+    <select id="album" name="album" size="1">
+      <option disabled selected value>Select Album</option>
+      <option>AlbumPlaceholder</option>
+    </select>
+    <fieldset>
+      <input type="checkbox" id="rock" value="rock" name="genre">      
+        <label for="rock">Rock</label>
+      <input type="checkbox" id="classical" value="classical" name="genre">      
+        <label for="classical">Classical</label>
+      <input type="checkbox" id="pop" value="pop" name="genre">      
+        <label for="pop">Pop</label>
+      <input type="checkbox" id="jazz" value="jazz" name="genre">      
+        <label for="jazz">Jazz</label>
+      <input type="checkbox" id="blues" value="blues" name="genre">      
+        <label for="blues">Blues</label>
+      <input type="checkbox" id="hiphop" value="hiphop" name="genre">      
+        <label for="hiphop">Hip-hop</label>
+    </fieldset>
   </aside>
-  <section>
-    <article>
-      SongTitleCardPlaceholder
+  <section id="song-cards">
+    <article class="card">
+      <h2 class="sing-title">Song Name</h2>
+      <h5 class="duration">Duration</h5>
+      <p class="descriptor">Artist</p>
+      <p class="descriptor">Album</p>
+      <p class="descriptor">Genre</p>
     </article>
   </section>
 </body>
