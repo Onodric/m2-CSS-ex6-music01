@@ -13,46 +13,52 @@
 <!-- 1. Create five options for the artist select element of any artist that you enjoy. -->
   <header>
     <ul>
-        <li>View Music</li>
-        <li>Add Music</li>
-        <li>Profile</li>
+        <li><a href="#" class="selected">View Music</a></li>
+        <li><a href="#">Add Music</a></li>
+        <li><a href="#">Profile</a></li>
     </ul>
   </header>
-  <aside>
-    <label for="song-length">Song Length:</label>
-    <input type="range" name="song-length" id="song-length">
-    <label for="artist">Artist:</label>
-    <select id="artist" name="artist" size="1">
-      <option disabled selected value>Select Artist</option>
-      <option>ArtistPlaceholder</option>
-    </select>
-    <label for="album">Album:</label>
-    <select id="album" name="album" size="1">
-      <option disabled selected value>Select Album</option>
-      <option>AlbumPlaceholder</option>
-    </select>
-    <fieldset>
-      <input type="checkbox" id="rock" value="rock" name="genre">      
-        <label for="rock">Rock</label>
-      <input type="checkbox" id="classical" value="classical" name="genre">      
-        <label for="classical">Classical</label>
-      <input type="checkbox" id="pop" value="pop" name="genre">      
-        <label for="pop">Pop</label>
-      <input type="checkbox" id="jazz" value="jazz" name="genre">      
-        <label for="jazz">Jazz</label>
-      <input type="checkbox" id="blues" value="blues" name="genre">      
-        <label for="blues">Blues</label>
-      <input type="checkbox" id="hiphop" value="hiphop" name="genre">      
-        <label for="hiphop">Hip-hop</label>
-    </fieldset>
+  <aside id="chooser">
+    <div class="sidebar">
+      <label for="song-length">Song Length:</label>
+      <input type="range" name="song-length" id="song-length" class="sidebar-range">
+      <label for="artist">Artist:</label>
+      <select id="artist" name="artist" size="1">
+        <option disabled selected value>Options</option>
+        <option>ArtistPlaceholder</option>
+      </select>
+      <label for="album">Album:</label>
+      <select id="album" name="album" size="1">
+        <option disabled selected value>Options</option>
+        <option>AlbumPlaceholder</option>
+      </select>
+      <label for="genre">Genre</label>
+      <fieldset id="genre">
+        <input type="checkbox" id="rock" value="rock" name="genre">      
+          <label for="rock">Rock</label>
+        <input type="checkbox" id="classical" value="classical" name="genre">      
+          <label for="classical">Classical</label>
+        <input type="checkbox" id="pop" value="pop" name="genre">      
+          <label for="pop">Pop</label>
+        <input type="checkbox" id="jazz" value="jazz" name="genre">      
+          <label for="jazz">Jazz</label>
+        <input type="checkbox" id="blues" value="blues" name="genre">      
+          <label for="blues">Blues</label>
+        <input type="checkbox" id="hiphop" value="hiphop" name="genre">      
+          <label for="hiphop">Hip-hop</label>
+      </fieldset>
+      <button type="submit" class="btn-filter">Filter</button>
+    </div>
   </aside>
   <section id="song-cards">
     <article class="card">
-      <h2 class="sing-title">Song Name</h2>
-      <h5 class="duration">Duration</h5>
-      <p class="descriptor">Artist</p>
-      <p class="descriptor">Album</p>
-      <p class="descriptor">Genre</p>
+      <h2 class="song-title">Song Name</h2>
+      <!-- <h5 class="duration">Duration</h5> -->
+      <ul>
+          <li class="descriptor">Artist Name</li>
+          <li class="descriptor">Album Title</li>
+          <li class="descriptor">Genre</li>
+      </ul>      
     </article>
   </section>
 </body>
