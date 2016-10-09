@@ -141,7 +141,7 @@ input[type=range].sidebar-range::-webkit-slider-thumb {
   margin-top: -7px;
 }
 input[type=range].sidebar-range:focus::-webkit-slider-runnable-track {
-  background: #777;
+  background: #333;
 }
 input[type=range].sidebar-range::-moz-range-track {
   width: 100%;
